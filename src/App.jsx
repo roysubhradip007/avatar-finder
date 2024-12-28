@@ -1,12 +1,13 @@
 
 import './App.css'
+import Search from './components/Search/Search';
 
 function App() {
 
   return (
-    <>
-      hii suman congratulation for new project
-    </>
+    <div>
+      <Search />
+    </div>
   )
 }
 
