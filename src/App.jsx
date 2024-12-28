@@ -1,12 +1,12 @@
 
 import './App.css'
-import Search from './components/Search/Search';
+import GitAvatar from './components/GitAvatar/GitAvatar';
 
 function App() {
 
   return (
     <div className='mainContainer'>
-      <Search />
+      <GitAvatar />
     </div>
   )
 }
