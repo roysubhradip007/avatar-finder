@@ -4,8 +4,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import "./avatarList.css"
 
-function AvatarList() {
-    const url = `https://api.github.com/search/users?q=suman&per_page=12`
+function AvatarList({user_name}) {
+    const url = `https://api.github.com/search/users?q=${user_name}&per_page=12`
     const [avatarData, setAvatarData] = useState([]);
 
     async function downloadAvatar() {
@@ -18,7 +18,8 @@ function AvatarList() {
 
     useEffect(() => {
         downloadAvatar();
-    }, []);
+    }, [url]);
+
     return (
         <div className="avatarList-wrapper">
             {(avatarData == null) ? "data is loading" : avatarData.map((e) => <Avatar key={e.id} image={e.avatar_url} username={e.login} 
