@@ -4,8 +4,8 @@ function Avatar({image, username}) {
     console.log(image, username);
 
     return (
-        <div>
-            <img src={image} alt="" />
+        <div className="avatar-wrapper">
+            <img src={image} alt="" className="image"/>
             <h3>{username}</h3>
         </div>
     )

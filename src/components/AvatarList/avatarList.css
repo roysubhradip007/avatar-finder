@@ -1,0 +1,9 @@
+.avatarList-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3rem;
+    margin-top: 3rem;
+}

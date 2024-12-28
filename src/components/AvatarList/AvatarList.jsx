@@ -2,6 +2,7 @@ import axios from "axios";
 import Avatar from "../Avatar/Avatar";
 import { useState } from "react";
 import { useEffect } from "react";
+import "./avatarList.css"
 
 function AvatarList() {
     const url = `https://api.github.com/search/users?q=suman&per_page=12`
